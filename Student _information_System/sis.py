@@ -81,6 +81,11 @@ def inputData():
 			else:
 				print("\tInvalid prn")
 				validate_prn()
+
+		# check if dictionary is empty
+		elif not studentDict:
+			student_inf['prn'] = prn
+			
 		else:
 			print("Student Already Exists!")
 			
